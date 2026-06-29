@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>goumi — cook hands-free, guided by your voice</title>
 <meta name="description" content="goumi creates recipes with AI and guides you through them by voice, so your hands stay on the food, never the screen.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+<meta name="theme-color" content="#306840">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="goumi">
+<meta property="og:title" content="goumi — cook hands-free, guided by your voice">
+<meta property="og:description" content="goumi creates recipes with AI and reads them aloud step by step, so your hands stay on the food, never the screen.">
+<meta property="og:url" content="https://goumi.ai/">
+<meta property="og:image" content="https://goumi.ai/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="goumi — cook hands-free, AI recipes read aloud">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="goumi — cook hands-free, guided by your voice">
+<meta name="twitter:description" content="AI recipes, read aloud while you cook. Hands on the food, never the screen.">
+<meta name="twitter:image" content="https://goumi.ai/og-image.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -55,6 +73,18 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1
 .nav .links{margin-left:auto;display:flex;align-items:center;gap:26px}
 .nav .links a:not(.btn-primary){color:var(--slate);text-decoration:none;font-weight:600;font-size:14.5px;transition:color .2s}
 .nav .links a:hover{color:var(--forest)}
+/* always-listening wave */
+.listening{display:inline-flex;align-items:center;gap:8px;padding:6px 11px;border-radius:999px;background:rgba(48,104,64,.09);border:1px solid rgba(48,104,64,.16)}
+.listening .wv{display:inline-flex;align-items:center;gap:2.5px;height:15px}
+.listening .wv i{width:2.5px;height:100%;border-radius:2px;background:var(--forest);transform-origin:center;animation:wv 1.1s ease-in-out infinite}
+.listening .wv i:nth-child(1){animation-delay:-.90s}
+.listening .wv i:nth-child(2){animation-delay:-.55s}
+.listening .wv i:nth-child(3){animation-delay:-.20s}
+.listening .wv i:nth-child(4){animation-delay:-.75s}
+.listening .wv i:nth-child(5){animation-delay:-.40s}
+@keyframes wv{0%,100%{transform:scaleY(.32)}50%{transform:scaleY(1)}}
+.listening .lt{font-size:12px;font-weight:600;color:var(--forest);letter-spacing:.01em;white-space:nowrap}
+@media(max-width:760px){.listening{display:none}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14.5px;text-decoration:none;border:none;cursor:pointer;border-radius:13px;padding:11px 18px;transition:transform .2s,box-shadow .2s}
 .btn-primary{background:linear-gradient(180deg,#347f48,#1e4d2e);color:#fff;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,.25);box-shadow:0 8px 20px -8px rgba(31,74,46,.55)}
 .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 26px -8px rgba(31,74,46,.7),inset 0 1px 0 rgba(255,255,255,.25)}
@@ -142,9 +172,10 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 .step-c p{color:var(--slate);font-size:14.5px;line-height:1.55}
 
 /* showcase */
-.show{display:flex;gap:24px;justify-content:center;align-items:flex-end;flex-wrap:wrap}
-.show .phone{width:266px}
-.show .phone.mid{width:266px}
+.show{display:flex;gap:18px;justify-content:center;align-items:flex-end;flex-wrap:nowrap}
+.show > div{flex:1 1 0;min-width:0;max-width:262px;display:flex;flex-direction:column}
+.show .phone{width:100%}
+.show .phone.mid{width:100%}
 .cap{text-align:center;margin-top:14px;font-size:14px;font-weight:700;color:var(--forest-deep)}
 .cap span{display:block;font-weight:500;font-size:12.5px;color:var(--slate);margin-top:2px}
 
@@ -167,14 +198,14 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 .stats svg{width:13px;height:13px}
 
 /* recipe detail mock */
-.rd{flex:1;display:flex;flex-direction:column;padding-bottom:0}
-.rd .hero-img{height:140px;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.12) 40%,rgba(0,0,0,0) 64%),url('flatbread.jpg') 50% 50%/cover no-repeat,linear-gradient(150deg,#E9A66B,#D9543B);position:relative;display:flex;align-items:flex-end;padding:16px}
+.rd{flex:1;display:flex;flex-direction:column;padding-bottom:70px}
+.rd .hero-img{height:140px;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.12) 40%,rgba(0,0,0,0) 64%),url('flatbread.jpg') 50% 45%/cover no-repeat,linear-gradient(150deg,#E9A66B,#D9543B);position:relative;display:flex;align-items:flex-end;padding:16px}
 .rd .hero-img .ai{position:absolute;top:46px;left:14px;font-size:9.5px;font-weight:700;color:#fff;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:3px 8px;border-radius:999px}
 .rd .hero-img b{color:#fff;font-size:20px;font-weight:800;letter-spacing:-.02em;text-shadow:0 2px 10px rgba(0,0,0,.4)}
 .rd .chips{display:flex;gap:7px;padding:14px 16px 8px;flex-wrap:wrap}
 .rd .chips span{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:var(--forest-deep);background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.8);padding:6px 10px;border-radius:999px}
 .rd .chips svg{width:13px;height:13px}
-.rd .ing{padding:6px 16px 14px}
+.rd .ing{padding:6px 16px 14px;flex:1;overflow:hidden;min-height:0}
 .rd .ing h5{font-size:13px;font-weight:800;color:var(--forest-deep);margin-bottom:8px}
 .rd .ing li{list-style:none;display:flex;align-items:center;gap:9px;font-size:13px;color:var(--ink);padding:5px 0;border-bottom:1px solid rgba(31,74,46,.07)}
 .rd .ing li::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--leaf);flex:none}
@@ -213,9 +244,12 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
   .steps{grid-template-columns:1fr}
   .fgrid{grid-template-columns:1fr;gap:24px}
 }
+@media(max-width:720px){
+  .show{flex-direction:column;align-items:center}
+  .show > div{flex:none;width:min(300px,86vw);max-width:none}
+}
 @media(max-width:480px){
   .grid4{grid-template-columns:1fr}
-  .show .phone,.show .phone.mid{width:270px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;scroll-behavior:auto}
@@ -233,6 +267,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
 <div class="nav-outer">
   <nav class="nav glass">
     <a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+    <div class="listening" title="goumi talks you through every step, hands-free"><span class="wv"><i></i><i></i><i></i><i></i><i></i></span><span class="lt">always listening</span></div>
     <div class="links">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
