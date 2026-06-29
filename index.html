@@ -83,8 +83,9 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1
 .listening .wv i:nth-child(4){animation-delay:-.75s}
 .listening .wv i:nth-child(5){animation-delay:-.40s}
 @keyframes wv{0%,100%{transform:scaleY(.32)}50%{transform:scaleY(1)}}
+.listening .micic{display:none;width:14px;height:14px;color:var(--forest);flex:none}
 .listening .lt{font-size:12px;font-weight:600;color:var(--forest);letter-spacing:.01em;white-space:nowrap}
-@media(max-width:760px){.listening{display:none}}
+@media(max-width:760px){.listening{padding:5px 8px;gap:5px}.listening .lt{display:none}.listening .micic{display:inline-flex}}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14.5px;text-decoration:none;border:none;cursor:pointer;border-radius:13px;padding:11px 18px;transition:transform .2s,box-shadow .2s}
 .btn-primary{background:linear-gradient(180deg,#347f48,#1e4d2e);color:#fff;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,.25);box-shadow:0 8px 20px -8px rgba(31,74,46,.55)}
 .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 26px -8px rgba(31,74,46,.7),inset 0 1px 0 rgba(255,255,255,.25)}
@@ -149,7 +150,7 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 /* feature duo */
 .duo{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 .fcard{border-radius:var(--r);padding:30px}
-.fcard .ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;margin-bottom:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
+.fcard .ic{width:54px;height:54px;border-radius:16px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;box-shadow:inset 0 1px 0 rgba(255,255,255,.5)}
 .fcard.green .ic{background:linear-gradient(160deg,#3f885570,#2a5d3970);color:var(--forest-deep)}
 .fcard.berry .ic{background:linear-gradient(160deg,#e8826b55,#d9543b40);color:#b03f2c}
 .fcard .ic svg{width:28px;height:28px}
@@ -158,7 +159,7 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 
 /* supporting features */
 .grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:20px}
-.mini{border-radius:18px;padding:24px 22px;display:flex;flex-direction:column;align-items:flex-start;text-align:left}
+.mini{border-radius:18px;padding:24px 22px;text-align:left}
 .mini .mic{width:42px;height:42px;border-radius:12px;display:flex;align-items:center;justify-content:center;background:var(--glass-strong);border:1px solid var(--glass-brd);margin-bottom:14px;color:var(--forest);flex:none}
 .mini .mic svg{width:21px;height:21px}
 .mini h4{font-size:15.5px;font-weight:700;margin-bottom:5px}
@@ -167,7 +168,7 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 /* how */
 .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;counter-reset:s}
 .step-c{border-radius:var(--r);padding:28px;position:relative}
-.step-c .n{font-size:13px;font-weight:800;color:#fff;background:linear-gradient(180deg,#3a7d4f,#2a5d39);width:30px;height:30px;border-radius:10px;display:grid;place-items:center;margin-bottom:16px;box-shadow:0 6px 14px -6px rgba(31,74,46,.6)}
+.step-c .n{font-size:13px;font-weight:800;color:#fff;background:linear-gradient(180deg,#3a7d4f,#2a5d39);width:30px;height:30px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;box-shadow:0 6px 14px -6px rgba(31,74,46,.6)}
 .step-c h4{font-size:18px;font-weight:800;letter-spacing:-.01em;margin-bottom:8px}
 .step-c p{color:var(--slate);font-size:14.5px;line-height:1.55}
 
@@ -199,8 +200,8 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 
 /* recipe detail mock */
 .rd{flex:1;display:flex;flex-direction:column;padding-bottom:70px}
-.rd .hero-img{height:140px;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.12) 40%,rgba(0,0,0,0) 64%),url('flatbread.jpg') 50% 45%/cover no-repeat,linear-gradient(150deg,#E9A66B,#D9543B);position:relative;display:flex;align-items:flex-end;padding:16px}
-.rd .hero-img .ai{position:absolute;top:46px;left:14px;font-size:9.5px;font-weight:700;color:#fff;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:3px 8px;border-radius:999px}
+.rd .hero-img{height:138px;margin:12px 14px 2px;border-radius:18px;overflow:hidden;background:linear-gradient(to top,rgba(0,0,0,.62),rgba(0,0,0,.14) 42%,rgba(0,0,0,0) 66%),url('flatbread.jpg') 50% 45%/cover no-repeat,linear-gradient(150deg,#E9A66B,#D9543B);position:relative;display:flex;align-items:flex-end;padding:14px}
+.rd .hero-img .ai{position:absolute;top:10px;left:10px;font-size:9.5px;font-weight:700;color:#fff;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:3px 8px;border-radius:999px}
 .rd .hero-img b{color:#fff;font-size:20px;font-weight:800;letter-spacing:-.02em;text-shadow:0 2px 10px rgba(0,0,0,.4)}
 .rd .chips{display:flex;gap:7px;padding:14px 16px 8px;flex-wrap:wrap}
 .rd .chips span{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;color:var(--forest-deep);background:rgba(255,255,255,.72);border:1px solid rgba(255,255,255,.8);padding:6px 10px;border-radius:999px}
@@ -267,7 +268,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
 <div class="nav-outer">
   <nav class="nav glass">
     <a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
-    <div class="listening" title="goumi talks you through every step, hands-free"><span class="wv"><i></i><i></i><i></i><i></i><i></i></span><span class="lt">always listening</span></div>
+    <div class="listening" title="goumi talks you through every step, hands-free"><svg class="micic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/><path d="M19 11a1 1 0 0 0-2 0 5 5 0 0 1-10 0 1 1 0 0 0-2 0 7 7 0 0 0 6 6.9V21a1 1 0 0 0 2 0v-3.1A7 7 0 0 0 19 11z"/></svg><span class="wv"><i></i><i></i><i></i><i></i><i></i></span><span class="lt">always listening</span></div>
     <div class="links">
       <a href="#features">Features</a>
       <a href="#how">How it works</a>

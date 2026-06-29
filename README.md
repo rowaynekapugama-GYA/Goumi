@@ -17,6 +17,11 @@ Marketing website for goumi (hands-free, AI + voice cooking app). Plain HTML/CSS
 
 `.nojekyll` is included so all files are served as-is.
 
+## Seeing an old version? (cache)
+Browsers and GitHub Pages cache aggressively. After you deploy/replace files, **hard-refresh** to see changes:
+- Mac: **Cmd + Shift + R**   ·   Windows: **Ctrl + Shift + R**
+If a layout still looks like an older build, it's almost always a cached copy — hard-refresh or open in a private window.
+
 ## Important: social-share image
 The share preview tags use **absolute** `https://goumi.ai/...` URLs, so the link preview image only appears once the site is live at **goumi.ai**. If you test on a temporary GitHub Pages URL first, the preview image won't load until the goumi.ai domain points here.
 
