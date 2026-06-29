@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>goumi — Cookie Policy</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache">
+<title>goumi: Cookie Policy</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -65,6 +65,18 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
 .fcol a:hover{color:var(--forest)}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--slate);border-top:1px solid var(--line);padding-top:20px}
 @media(max-width:880px){.fgrid{grid-template-columns:1fr;gap:24px}}
+
+.cookie-bar{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;z-index:200;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border:1px solid var(--glass-brd);border-radius:18px;box-shadow:0 20px 50px -16px rgba(31,74,46,.42),inset 0 1px 0 rgba(255,255,255,.7);padding:15px 17px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;transform:translateY(170%);transition:transform .55s cubic-bezier(.16,.84,.3,1)}
+.cookie-bar.show{transform:none}
+.cookie-bar p{font-size:13.5px;color:var(--ink);line-height:1.5;flex:1;min-width:210px;margin:0}
+.cookie-bar a{color:var(--forest);font-weight:600;text-decoration:underline}
+.cookie-actions{display:flex;gap:8px;flex:none}
+.ck-btn{font-family:inherit;font-size:13.5px;font-weight:700;padding:9px 17px;border-radius:11px;cursor:pointer;border:1px solid transparent;transition:.18s}
+.ck-decline{background:transparent;border-color:var(--glass-brd);color:var(--slate)}
+.ck-decline:hover{color:var(--ink);border-color:var(--slate)}
+.ck-accept{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;box-shadow:0 8px 18px -8px rgba(31,74,46,.7)}
+.ck-accept:hover{filter:brightness(1.06)}
+@media(max-width:520px){.cookie-bar{flex-direction:column;align-items:stretch}.cookie-actions{justify-content:flex-end}}
 </style></head>
 <body>
 <div class="field"></div>
@@ -76,9 +88,9 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
 <main class="legal">
 <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Cookie Policy</div>
 <article class="doc glass">
-<h1>goumi — Cookie Policy</h1>
+<h1>goumi, Cookie Policy</h1>
 <blockquote>
-<p><strong>DRAFT FOR LEGAL REVIEW — NOT YET IN EFFECT.</strong>
+<p><strong>DRAFT FOR LEGAL REVIEW, NOT YET IN EFFECT.</strong>
 Working draft to brief a privacy lawyer; not legal advice. Confirm your actual cookies/SDKs and <code>[ANALYTICS_PROVIDER]</code> before publishing. Replace every <code>[bracketed placeholder]</code>.</p>
 </blockquote>
 <p><strong>Last updated:</strong> <code>[DATE]</code></p>
@@ -88,10 +100,10 @@ Working draft to brief a privacy lawyer; not legal advice. Confirm your actual c
 <p>Cookies are small text files stored on your device when you visit a website. Similar technologies include pixels, local storage, and mobile SDKs that perform comparable functions. They help a service work, remember your choices, and understand how it is used.</p>
 <h2>3. The categories we use</h2>
 <ul>
-<li><strong>Strictly necessary</strong> — required for the website/app to function (for example, security, load balancing, and remembering your consent choices). These cannot be switched off.</li>
-<li><strong>Functional</strong> — remember your preferences and settings to improve your experience.</li>
-<li><strong>Analytics / performance</strong> — help us understand how the Service is used so we can improve it (for example, <code>[ANALYTICS_PROVIDER]</code>). We configure analytics to minimise personal data where possible.</li>
-<li><strong>Marketing</strong> — <code>[Only include if you use marketing/advertising cookies. If you do not, state: "We do not use marketing or advertising cookies."]</code></li>
+<li><strong>Strictly necessary</strong>, required for the website/app to function (for example, security, load balancing, and remembering your consent choices). These cannot be switched off.</li>
+<li><strong>Functional</strong>, remember your preferences and settings to improve your experience.</li>
+<li><strong>Analytics / performance</strong>, help us understand how the Service is used so we can improve it (for example, <code>[ANALYTICS_PROVIDER]</code>). We configure analytics to minimise personal data where possible.</li>
+<li><strong>Marketing</strong>, <code>[Only include if you use marketing/advertising cookies. If you do not, state: "We do not use marketing or advertising cookies."]</code></li>
 </ul>
 <h2>4. Cookies and technologies we use</h2>
 <table>
@@ -124,7 +136,7 @@ Working draft to brief a privacy lawyer; not legal advice. Confirm your actual c
 </tr>
 </tbody>
 </table>
-<p><code>[Complete this table to match what you actually deploy — Apple App Privacy and Google Data Safety disclosures must match it.]</code></p>
+<p><code>[Complete this table to match what you actually deploy, Apple App Privacy and Google Data Safety disclosures must match it.]</code></p>
 <h2>5. Your choices and consent</h2>
 <p>Where required by law (for example, in the EU/UK), we ask for your <strong>opt-in consent</strong> before setting non-essential cookies, through a consent banner when you first visit. You can change your choices at any time via <code>[the "Cookie settings" link in the website footer]</code> and your browser or device settings. We also honour the <strong>Global Privacy Control</strong> signal where applicable.</p>
 <p>You can control cookies through your browser settings (to block or delete cookies) and manage app tracking through your device's privacy settings. Blocking some cookies may affect how the Service works.</p>
@@ -135,14 +147,14 @@ Working draft to brief a privacy lawyer; not legal advice. Confirm your actual c
 <h2>8. Contact</h2>
 <p><code>[goumi Pty Ltd]</code> · <code>[privacy@goumi.ai]</code></p>
 <hr />
-<h2>Appendix — Cookie consent banner copy (for the website)</h2>
+<h2>Appendix, Cookie consent banner copy (for the website)</h2>
 <p><strong>Banner heading:</strong> Cookies on goumi</p>
 <p><strong>Banner body:</strong> We use strictly necessary cookies to make goumi work. With your permission, we'd also like to use analytics cookies to understand how the site is used and improve it. You can change your choice any time.</p>
 <p><strong>Buttons:</strong> <code>Accept all</code> · <code>Reject non-essential</code> · <code>Manage settings</code></p>
 <p><strong>Manage settings panel:</strong>
-- <em>Strictly necessary</em> — Always on. Required for the site to function.
-- <em>Analytics</em> — Off by default. Helps us improve goumi. <code>[toggle]</code>
-- <em>Functional</em> — Off by default. Remembers your preferences. <code>[toggle]</code></p>
+- <em>Strictly necessary</em>, Always on. Required for the site to function.
+- <em>Analytics</em>, Off by default. Helps us improve goumi. <code>[toggle]</code>
+- <em>Functional</em>, Off by default. Remembers your preferences. <code>[toggle]</code></p>
 <p><code>Save preferences</code></p>
 </article>
 </main>
@@ -155,4 +167,24 @@ Working draft to brief a privacy lawyer; not legal advice. Confirm your actual c
 </div>
 <div class="fbot"><span>&copy; <span id="yr"></span> goumi. All rights reserved.</span><span>hello@goumi.ai</span></div>
 </div></footer><script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>goumi uses cookies to keep the site working and to understand how it's used. See our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="ck-btn ck-decline" id="ckDecline" type="button">Decline</button>
+    <button class="ck-btn ck-accept" id="ckAccept" type="button">Accept</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='goumi_cookie_consent',bar=document.getElementById('cookieBar');
+  if(!bar)return;
+  try{if(localStorage.getItem(KEY)){return;}}catch(e){}
+  setTimeout(function(){bar.classList.add('show');},700);
+  function done(v){try{localStorage.setItem(KEY,v);}catch(e){}bar.classList.remove('show');setTimeout(function(){bar.style.display='none';},550);}
+  var a=document.getElementById('ckAccept'),d=document.getElementById('ckDecline');
+  if(a)a.addEventListener('click',function(){done('accepted');});
+  if(d)d.addEventListener('click',function(){done('declined');});
+})();
+</script>
 </body></html>

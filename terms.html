@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>goumi — Terms of Service</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache">
+<title>goumi: Terms of Service</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -65,6 +65,18 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
 .fcol a:hover{color:var(--forest)}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--slate);border-top:1px solid var(--line);padding-top:20px}
 @media(max-width:880px){.fgrid{grid-template-columns:1fr;gap:24px}}
+
+.cookie-bar{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;z-index:200;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border:1px solid var(--glass-brd);border-radius:18px;box-shadow:0 20px 50px -16px rgba(31,74,46,.42),inset 0 1px 0 rgba(255,255,255,.7);padding:15px 17px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;transform:translateY(170%);transition:transform .55s cubic-bezier(.16,.84,.3,1)}
+.cookie-bar.show{transform:none}
+.cookie-bar p{font-size:13.5px;color:var(--ink);line-height:1.5;flex:1;min-width:210px;margin:0}
+.cookie-bar a{color:var(--forest);font-weight:600;text-decoration:underline}
+.cookie-actions{display:flex;gap:8px;flex:none}
+.ck-btn{font-family:inherit;font-size:13.5px;font-weight:700;padding:9px 17px;border-radius:11px;cursor:pointer;border:1px solid transparent;transition:.18s}
+.ck-decline{background:transparent;border-color:var(--glass-brd);color:var(--slate)}
+.ck-decline:hover{color:var(--ink);border-color:var(--slate)}
+.ck-accept{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;box-shadow:0 8px 18px -8px rgba(31,74,46,.7)}
+.ck-accept:hover{filter:brightness(1.06)}
+@media(max-width:520px){.cookie-bar{flex-direction:column;align-items:stretch}.cookie-actions{justify-content:flex-end}}
 </style></head>
 <body>
 <div class="field"></div>
@@ -76,15 +88,15 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
 <main class="legal">
 <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Terms of Service</div>
 <article class="doc glass">
-<h1>goumi — Terms of Service</h1>
+<h1>goumi, Terms of Service</h1>
 <blockquote>
-<p><strong>DRAFT FOR LEGAL REVIEW — NOT YET IN EFFECT.</strong>
+<p><strong>DRAFT FOR LEGAL REVIEW, NOT YET IN EFFECT.</strong>
 This is a working draft prepared to brief a privacy lawyer. It is not legal advice and must be reviewed and finalised by a qualified Australian lawyer before publication or launch. The health/nutrition/allergen disclaimers and the Australian Consumer Law provisions in particular need legal confirmation. Replace every <code>[bracketed placeholder]</code> with your details.</p>
 </blockquote>
 <p><strong>Last updated:</strong> <code>[DATE]</code>
 <strong>Effective:</strong> <code>[DATE]</code></p>
 <p>These Terms of Service ("<strong>Terms</strong>") are a legal agreement between you and <code>[goumi Pty Ltd]</code> (ABN <code>[XX XXX XXX XXX]</code>) ("<strong>goumi</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") governing your use of the goumi app, website, and related services (the "<strong>Service</strong>"). By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Service.</p>
-<h2>1. Eligibility — you must be 18 or over</h2>
+<h2>1. Eligibility, you must be 18 or over</h2>
 <p>The Service is for adults only. <strong>You must be at least 18 years old to use goumi.</strong> By using the Service you confirm that you are 18 or over. We do not knowingly permit anyone under 18 to use the Service, and we may verify your age and suspend or terminate accounts that do not meet this requirement.</p>
 <h2>2. The Service</h2>
 <p>goumi is a hands-free, voice-guided cooking app. It generates and personalises recipes, provides estimated nutritional information, runs a voice cooking experience, and helps you plan meals and manage your kitchen. We may change, add, or remove features at any time.</p>
@@ -104,18 +116,18 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 </ul>
 <h2>6. AI-generated content</h2>
 <p>goumi uses artificial intelligence to generate recipes, nutritional estimates, and dish images. <strong>AI-generated content can be inaccurate, incomplete, or unexpected.</strong> You are responsible for using your own judgement before relying on it, especially regarding food safety, ingredient suitability, and cooking methods. Dish images are AI-generated illustrations and your actual results will look different.</p>
-<h2>7. Health, nutrition, and allergen disclaimer — please read</h2>
+<h2>7. Health, nutrition, and allergen disclaimer, please read</h2>
 <p><strong>goumi does not provide medical, health, dietary, or nutritional advice, and is not a substitute for advice from a qualified professional.</strong> Specifically:</p>
 <ul>
 <li><strong>Nutritional information is an estimate.</strong> Calories, protein, fat, and other figures are approximate, derived from the listed ingredients, and vary with portion size, brands, and substitutions. Do not rely on them for medical or clinical purposes. If you have a medical condition (for example, diabetes or a serious allergy), consult a qualified professional.</li>
-<li><strong>Allergens — you must verify ingredients yourself.</strong> We cannot guarantee any recipe is free from a given allergen. Ingredient and allergen information may be incomplete or AI-generated. <strong>If you have an allergy or intolerance, you must check every ingredient and product label yourself before cooking or eating.</strong> You use allergy and dietary filters at your own risk.</li>
+<li><strong>Allergens, you must verify ingredients yourself.</strong> We cannot guarantee any recipe is free from a given allergen. Ingredient and allergen information may be incomplete or AI-generated. <strong>If you have an allergy or intolerance, you must check every ingredient and product label yourself before cooking or eating.</strong> You use allergy and dietary filters at your own risk.</li>
 <li><strong>Results vary.</strong> The taste, appearance, nutritional content, and outcome of any recipe will vary depending on the ingredients, brands, equipment, substitutions, and techniques you use.</li>
 <li><strong>Cooking is your responsibility.</strong> You are responsible for safe food handling, correct cooking temperatures, and the safe use of kitchen equipment.</li>
 </ul>
 <p>To the extent permitted by law, you assume the risks associated with using recipes and information from the Service. This section is subject to section 11.</p>
 <h2>8. Intellectual property</h2>
 <p>The Service, including its software, design, branding, and content (excluding your own content), is owned by goumi or its licensors and is protected by intellectual property laws. These Terms do not grant you any rights in our intellectual property except the licence in section 3. The "goumi" name and logo are our trade marks and may not be used without our permission.</p>
-<p><code>[If users can submit content — e.g., notes, custom recipes — add a user-content licence here: you retain ownership but grant goumi a licence to host and display your content to provide the Service.]</code></p>
+<p><code>[If users can submit content, e.g., notes, custom recipes, add a user-content licence here: you retain ownership but grant goumi a licence to host and display your content to provide the Service.]</code></p>
 <h2>9. Third-party services</h2>
 <p>The Service relies on third parties, including the Apple App Store, Google Play, and our AI and infrastructure providers. Your use of third-party services may be subject to their terms, and we are not responsible for them.</p>
 <h2>10. Disclaimers of warranties</h2>
@@ -132,7 +144,7 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 <p>We may update these Terms from time to time. We will post the updated version with a new "Last updated" date and, where the change is material, notify you. Continuing to use the Service after changes take effect means you accept the updated Terms.</p>
 <h2>16. Governing law and disputes</h2>
 <p>These Terms are governed by the laws of <code>[New South Wales / your state]</code>, Australia, and you and we submit to the non-exclusive jurisdiction of the courts of that place. Nothing in this section limits any mandatory consumer-law rights you have in your country of residence. Before starting a formal dispute, please contact us so we can try to resolve it.</p>
-<h2>17. Apple App Store — additional terms (Apple devices)</h2>
+<h2>17. Apple App Store, additional terms (Apple devices)</h2>
 <p>If you download goumi from the Apple App Store, the following also apply and, to the extent of any conflict with the rest of these Terms for Apple-device use, prevail:</p>
 <ul>
 <li>These Terms are between you and goumi only, <strong>not with Apple</strong>. Apple is not responsible for the Service or its content.</li>
@@ -157,4 +169,24 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 </div>
 <div class="fbot"><span>&copy; <span id="yr"></span> goumi. All rights reserved.</span><span>hello@goumi.ai</span></div>
 </div></footer><script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>goumi uses cookies to keep the site working and to understand how it's used. See our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="ck-btn ck-decline" id="ckDecline" type="button">Decline</button>
+    <button class="ck-btn ck-accept" id="ckAccept" type="button">Accept</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='goumi_cookie_consent',bar=document.getElementById('cookieBar');
+  if(!bar)return;
+  try{if(localStorage.getItem(KEY)){return;}}catch(e){}
+  setTimeout(function(){bar.classList.add('show');},700);
+  function done(v){try{localStorage.setItem(KEY,v);}catch(e){}bar.classList.remove('show');setTimeout(function(){bar.style.display='none';},550);}
+  var a=document.getElementById('ckAccept'),d=document.getElementById('ckDecline');
+  if(a)a.addEventListener('click',function(){done('accepted');});
+  if(d)d.addEventListener('click',function(){done('declined');});
+})();
+</script>
 </body></html>

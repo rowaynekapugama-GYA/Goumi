@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>goumi — Privacy Policy</title>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta http-equiv="Cache-Control" content="no-cache">
+<title>goumi: Privacy Policy</title>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -65,6 +65,18 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
 .fcol a:hover{color:var(--forest)}
 .fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--slate);border-top:1px solid var(--line);padding-top:20px}
 @media(max-width:880px){.fgrid{grid-template-columns:1fr;gap:24px}}
+
+.cookie-bar{position:fixed;left:16px;right:16px;bottom:16px;max-width:560px;margin:0 auto;z-index:200;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border:1px solid var(--glass-brd);border-radius:18px;box-shadow:0 20px 50px -16px rgba(31,74,46,.42),inset 0 1px 0 rgba(255,255,255,.7);padding:15px 17px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;transform:translateY(170%);transition:transform .55s cubic-bezier(.16,.84,.3,1)}
+.cookie-bar.show{transform:none}
+.cookie-bar p{font-size:13.5px;color:var(--ink);line-height:1.5;flex:1;min-width:210px;margin:0}
+.cookie-bar a{color:var(--forest);font-weight:600;text-decoration:underline}
+.cookie-actions{display:flex;gap:8px;flex:none}
+.ck-btn{font-family:inherit;font-size:13.5px;font-weight:700;padding:9px 17px;border-radius:11px;cursor:pointer;border:1px solid transparent;transition:.18s}
+.ck-decline{background:transparent;border-color:var(--glass-brd);color:var(--slate)}
+.ck-decline:hover{color:var(--ink);border-color:var(--slate)}
+.ck-accept{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;box-shadow:0 8px 18px -8px rgba(31,74,46,.7)}
+.ck-accept:hover{filter:brightness(1.06)}
+@media(max-width:520px){.cookie-bar{flex-direction:column;align-items:stretch}.cookie-actions{justify-content:flex-end}}
 </style></head>
 <body>
 <div class="field"></div>
@@ -76,9 +88,9 @@ footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
 <main class="legal">
 <div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Privacy Policy</div>
 <article class="doc glass">
-<h1>goumi — Privacy Policy</h1>
+<h1>goumi, Privacy Policy</h1>
 <blockquote>
-<p><strong>DRAFT FOR LEGAL REVIEW — NOT YET IN EFFECT.</strong>
+<p><strong>DRAFT FOR LEGAL REVIEW, NOT YET IN EFFECT.</strong>
 This is a working draft prepared to brief a privacy lawyer. It is not legal advice and must be reviewed and finalised by a qualified Australian privacy/tech lawyer before you publish it or launch. Replace every <code>[bracketed placeholder]</code> with your details, and confirm the two outstanding vendors (<code>[STT_PROVIDER]</code>, <code>[IMAGE_PROVIDER]</code>).</p>
 </blockquote>
 <p><strong>Last updated:</strong> <code>[DATE]</code>
@@ -90,13 +102,13 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 <h2>2. Scope and how this policy applies to you</h2>
 <p>goumi is available to users around the world, but we are based in Australia. The privacy laws that apply to you depend mainly on <strong>where you are located</strong>, not where we are. This policy is written to meet the standard of the EU/UK General Data Protection Regulation (GDPR), which generally also satisfies the Australian Privacy Act 1988 (Cth) and its Australian Privacy Principles (APPs), and gives strong protections to users elsewhere. Region-specific rights are set out in section 13.</p>
 <h2>3. The information we collect</h2>
-<p><strong>Account and identity information</strong> — your name, email address, and login credentials. If you sign in with Apple or Google, we receive a token and the name and email you authorise (Apple may provide a private relay email).</p>
-<p><strong>Health and dietary information (sensitive)</strong> — allergies, dietary restrictions, and health or nutrition goals that you choose to provide so we can tailor recipes to you. We treat this as <strong>sensitive information</strong> under the Australian Privacy Act and <strong>special category data</strong> under the GDPR, and we collect it only with your explicit, separate consent (see section 5).</p>
-<p><strong>Voice and audio information</strong> — when you use hands-free voice features, we process your spoken commands. <code>[Describe the audio lifecycle once confirmed: whether raw audio is processed transient and discarded, or transcribed via [STT_PROVIDER]; whether any audio is retained.]</code> By default we do not retain raw audio recordings.</p>
-<p><strong>Recipe and usage information</strong> — the recipes you request, save, plan, or cook; your pantry/kitchen contents; preferences; and how you interact with the Service (features used, session activity).</p>
-<p><strong>Device and technical information</strong> — device type, operating system, app version, language, approximate location derived from IP, and identifiers needed to run the app and keep it secure.</p>
-<p><strong>Age signals</strong> — where required by law (for example, in certain US states), we receive an age-range or supervision signal from the app store to confirm you are 18 or over. We use this only for age verification and compliance, and do not use it for advertising or profiling.</p>
-<p><strong>Payment information</strong> — subscriptions are processed by Apple and Google through their in-app purchase systems. We do not collect or store your full payment card details; we receive confirmation of your subscription status.</p>
+<p><strong>Account and identity information</strong>, your name, email address, and login credentials. If you sign in with Apple or Google, we receive a token and the name and email you authorise (Apple may provide a private relay email).</p>
+<p><strong>Health and dietary information (sensitive)</strong>, allergies, dietary restrictions, and health or nutrition goals that you choose to provide so we can tailor recipes to you. We treat this as <strong>sensitive information</strong> under the Australian Privacy Act and <strong>special category data</strong> under the GDPR, and we collect it only with your explicit, separate consent (see section 5).</p>
+<p><strong>Voice and audio information</strong>, when you use hands-free voice features, we process your spoken commands. <code>[Describe the audio lifecycle once confirmed: whether raw audio is processed transient and discarded, or transcribed via [STT_PROVIDER]; whether any audio is retained.]</code> By default we do not retain raw audio recordings.</p>
+<p><strong>Recipe and usage information</strong>, the recipes you request, save, plan, or cook; your pantry/kitchen contents; preferences; and how you interact with the Service (features used, session activity).</p>
+<p><strong>Device and technical information</strong>, device type, operating system, app version, language, approximate location derived from IP, and identifiers needed to run the app and keep it secure.</p>
+<p><strong>Age signals</strong>, where required by law (for example, in certain US states), we receive an age-range or supervision signal from the app store to confirm you are 18 or over. We use this only for age verification and compliance, and do not use it for advertising or profiling.</p>
+<p><strong>Payment information</strong>, subscriptions are processed by Apple and Google through their in-app purchase systems. We do not collect or store your full payment card details; we receive confirmation of your subscription status.</p>
 <h2>4. How we collect information</h2>
 <p>We collect information <strong>directly from you</strong> (when you create an account, set preferences, or speak to the app), <strong>automatically</strong> (device and usage data when you use the Service), and <strong>from third parties</strong> (your authentication provider; the app store age signal; <code>[analytics provider]</code> where applicable).</p>
 <h2>5. Sensitive information and explicit consent</h2>
@@ -105,7 +117,7 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 <p>We use your information to:</p>
 <ul>
 <li>create and manage your account, and authenticate you;</li>
-<li>provide the Service — generate and personalise recipes, run the hands-free voice cooking experience, and manage your meal plans and kitchen;</li>
+<li>provide the Service, generate and personalise recipes, run the hands-free voice cooking experience, and manage your meal plans and kitchen;</li>
 <li>estimate nutritional information and tailor content to your dietary needs and goals;</li>
 <li>process your subscription and provide customer support;</li>
 <li>keep the Service secure, prevent fraud and abuse, and verify age where required;</li>
@@ -120,7 +132,7 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 <li><strong>Dish images</strong> are generated by <code>[IMAGE_PROVIDER]</code>. We send a text description of the dish; we do not send personal information.</li>
 <li><strong>Voice transcription</strong> (converting your spoken commands to text) is handled by <code>[STT_PROVIDER]</code>; <strong>voice output</strong> (the app speaking to you) is generated by <strong>ElevenLabs</strong>.</li>
 </ul>
-<p>These AI features generate content automatically. They do <strong>not</strong> make decisions that produce legal or similarly significant effects about you. Recipes, nutritional figures, and images are estimates and may be inaccurate — see our Terms for the relevant disclaimers.</p>
+<p>These AI features generate content automatically. They do <strong>not</strong> make decisions that produce legal or similarly significant effects about you. Recipes, nutritional figures, and images are estimates and may be inaccurate, see our Terms for the relevant disclaimers.</p>
 <h2>8. How we share your information</h2>
 <p>We do <strong>not sell</strong> your personal information, and we do <strong>not share</strong> it for cross-context behavioural advertising.</p>
 <p>We share information with the service providers ("processors") who help us run goumi, each bound by a data processing agreement and permitted to use your information only to provide services to us:</p>
@@ -182,15 +194,15 @@ This is a working draft prepared to brief a privacy lawyer. It is not legal advi
 <h2>12. Your privacy rights</h2>
 <p>Depending on where you live, you have some or all of the following rights:</p>
 <ul>
-<li><strong>Access</strong> — request a copy of the personal information we hold about you.</li>
-<li><strong>Correction</strong> — ask us to correct inaccurate or incomplete information (you can also edit your profile and dietary information in the app).</li>
-<li><strong>Deletion</strong> — delete your account and personal information (available in the app's settings, or by contacting us).</li>
-<li><strong>Portability</strong> — receive certain information in a portable, machine-readable format.</li>
-<li><strong>Object / restrict</strong> — object to or restrict certain processing.</li>
-<li><strong>Withdraw consent</strong> — withdraw consent (including for health information and voice processing) at any time.</li>
-<li><strong>Opt out of sale/sharing</strong> — for US users, we do not sell or share your information for advertising; we also honour the Global Privacy Control signal.</li>
+<li><strong>Access</strong>, request a copy of the personal information we hold about you.</li>
+<li><strong>Correction</strong>, ask us to correct inaccurate or incomplete information (you can also edit your profile and dietary information in the app).</li>
+<li><strong>Deletion</strong>, delete your account and personal information (available in the app's settings, or by contacting us).</li>
+<li><strong>Portability</strong>, receive certain information in a portable, machine-readable format.</li>
+<li><strong>Object / restrict</strong>, object to or restrict certain processing.</li>
+<li><strong>Withdraw consent</strong>, withdraw consent (including for health information and voice processing) at any time.</li>
+<li><strong>Opt out of sale/sharing</strong>, for US users, we do not sell or share your information for advertising; we also honour the Global Privacy Control signal.</li>
 </ul>
-<p>To exercise a right, use the controls in the app or contact <code>[privacy@goumi.ai]</code>. We will respond within the timeframe required by your local law (generally within 30 days; up to 45 days for certain US requests). We may need to verify your identity first. <strong>Consumer health data</strong> in Washington and Nevada is also covered by a separate policy — see our <a href="health-data-policy.html">Consumer Health Data Privacy Policy</a>.</p>
+<p>To exercise a right, use the controls in the app or contact <code>[privacy@goumi.ai]</code>. We will respond within the timeframe required by your local law (generally within 30 days; up to 45 days for certain US requests). We may need to verify your identity first. <strong>Consumer health data</strong> in Washington and Nevada is also covered by a separate policy, see our <a href="health-data-policy.html">Consumer Health Data Privacy Policy</a>.</p>
 <h2>13. Region-specific information</h2>
 <p><strong>Australia.</strong> We handle personal information in accordance with the Australian Privacy Principles. If you are concerned about how we have handled your information, contact us first; if you are not satisfied, you may complain to the Office of the Australian Information Commissioner (OAIC) at oaic.gov.au.</p>
 <p><strong>European Economic Area / United Kingdom.</strong> We process your data on the legal bases in section 6. You have the GDPR/UK GDPR rights in section 12, including the right to lodge a complaint with your local supervisory authority. Our <code>[EU representative]</code> / <code>[UK representative]</code> is <code>[name and contact]</code>. <code>[Confirm whether a Data Protection Officer is required.]</code></p>
@@ -215,4 +227,24 @@ Postal: <code>[postal address]</code>
 </div>
 <div class="fbot"><span>&copy; <span id="yr"></span> goumi. All rights reserved.</span><span>hello@goumi.ai</span></div>
 </div></footer><script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+
+<div class="cookie-bar" id="cookieBar" role="dialog" aria-live="polite" aria-label="Cookie notice">
+  <p>goumi uses cookies to keep the site working and to understand how it's used. See our <a href="cookie-policy.html">Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="ck-btn ck-decline" id="ckDecline" type="button">Decline</button>
+    <button class="ck-btn ck-accept" id="ckAccept" type="button">Accept</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY='goumi_cookie_consent',bar=document.getElementById('cookieBar');
+  if(!bar)return;
+  try{if(localStorage.getItem(KEY)){return;}}catch(e){}
+  setTimeout(function(){bar.classList.add('show');},700);
+  function done(v){try{localStorage.setItem(KEY,v);}catch(e){}bar.classList.remove('show');setTimeout(function(){bar.style.display='none';},550);}
+  var a=document.getElementById('ckAccept'),d=document.getElementById('ckDecline');
+  if(a)a.addEventListener('click',function(){done('accepted');});
+  if(d)d.addEventListener('click',function(){done('declined');});
+})();
+</script>
 </body></html>
