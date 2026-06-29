@@ -50,12 +50,13 @@ body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1
 .brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
 .brand .mark{width:32px;height:32px;flex:none}
 .brand b{font-weight:800;font-size:19px;letter-spacing:-.03em}
-.brandlogo{height:30px;width:auto;display:block}
+.brandlogo{height:42px;width:auto;display:block}
+@media(max-width:680px){.brandlogo{height:34px}}
 .nav .links{margin-left:auto;display:flex;align-items:center;gap:26px}
 .nav .links a{color:var(--slate);text-decoration:none;font-weight:600;font-size:14.5px;transition:color .2s}
 .nav .links a:hover{color:var(--forest)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:14.5px;text-decoration:none;border:none;cursor:pointer;border-radius:13px;padding:11px 18px;transition:transform .2s,box-shadow .2s}
-.btn-primary{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;box-shadow:0 8px 20px -8px rgba(31,74,46,.6),inset 0 1px 0 rgba(255,255,255,.25)}
+.btn-primary{background:linear-gradient(180deg,#347f48,#1e4d2e);color:#fff;font-weight:800;text-shadow:0 1px 2px rgba(0,0,0,.25);box-shadow:0 8px 20px -8px rgba(31,74,46,.55)}
 .btn-primary:hover{transform:translateY(-1px);box-shadow:0 12px 26px -8px rgba(31,74,46,.7),inset 0 1px 0 rgba(255,255,255,.25)}
 .nav .btn{padding:10px 16px}
 @media(max-width:680px){.nav .links a:not(.btn){display:none}}
@@ -79,10 +80,10 @@ h1 .hl{color:var(--berry)}
 .hero-phone{display:flex;justify-content:center;position:relative}
 .phone{width:300px;border-radius:46px;padding:11px;background:linear-gradient(160deg,rgba(255,255,255,.55),rgba(255,255,255,.25));border:1px solid rgba(255,255,255,.6);box-shadow:var(--shadow-lg),inset 0 1px 0 rgba(255,255,255,.7);position:relative}
 .screen{position:relative;border-radius:36px;overflow:hidden;aspect-ratio:9/19.3;background:linear-gradient(180deg,#EAF3EC,#DCEBDF);display:flex;flex-direction:column}
-.island{position:absolute;top:11px;left:50%;transform:translateX(-50%);width:88px;height:26px;background:#10160F;border-radius:16px;z-index:6}
+.island{position:absolute;top:10px;left:50%;transform:translateX(-50%);width:84px;height:25px;background:#0b0e0b;border-radius:15px;z-index:6}
 .sbar{display:flex;justify-content:space-between;align-items:center;padding:13px 20px 0;font-size:12px;font-weight:700;color:var(--ink);z-index:5}
 .sbar .r{display:flex;gap:5px;align-items:center}
-.sbar .r i{width:15px;height:10px;border-radius:2px;background:var(--ink);display:inline-block;opacity:.85}
+.sbar .r .si{height:11px;width:auto;display:block;opacity:.92}
 /* in-app glass nav */
 .appnav{position:absolute;left:14px;right:14px;bottom:14px;height:58px;border-radius:22px;background:rgba(255,255,255,.62);-webkit-backdrop-filter:blur(16px) saturate(1.6);backdrop-filter:blur(16px) saturate(1.6);border:1px solid rgba(255,255,255,.75);box-shadow:0 10px 26px -10px rgba(31,74,46,.4),inset 0 1px 0 rgba(255,255,255,.8);display:flex;align-items:center;justify-content:space-around;padding:0 6px;z-index:5}
 .appnav a{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;color:#8A968D}
@@ -154,7 +155,7 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 .hs .ask .mc{margin-left:auto;color:var(--forest)}
 .rc{border-radius:18px;overflow:hidden;margin-bottom:13px;background:rgba(255,255,255,.66);border:1px solid rgba(255,255,255,.75);box-shadow:0 8px 20px -12px rgba(31,74,46,.3)}
 .rc .img{height:78px;position:relative}
-.rc .img.g1{background:url('flatbread.jpg') 50% 66%/cover no-repeat,linear-gradient(135deg,#E9A66B,#D9543B)}
+.rc .img.g1{background:url('flatbread.jpg') 50% 48%/cover no-repeat,linear-gradient(135deg,#E9A66B,#D9543B)}
 .rc .img.g2{background:url('tostadas.jpg') 42% 54%/cover no-repeat,linear-gradient(135deg,#7CC392,#2f7a4c)}
 .rc .ai{position:absolute;top:8px;left:8px;font-size:9.5px;font-weight:700;color:#fff;background:rgba(0,0,0,.32);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:3px 8px;border-radius:999px}
 .rc .body{padding:10px 12px 12px}
@@ -165,7 +166,7 @@ h2{font-size:clamp(28px,4vw,42px);line-height:1.08;letter-spacing:-.03em;font-we
 
 /* recipe detail mock */
 .rd{flex:1;display:flex;flex-direction:column;padding-bottom:0}
-.rd .hero-img{height:188px;background:url('flatbread.jpg') 50% 60%/cover no-repeat,linear-gradient(150deg,#E9A66B,#D9543B);position:relative;display:flex;align-items:flex-end;padding:16px}
+.rd .hero-img{height:188px;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.12) 40%,rgba(0,0,0,0) 64%),url('flatbread.jpg') 50% 50%/cover no-repeat,linear-gradient(150deg,#E9A66B,#D9543B);position:relative;display:flex;align-items:flex-end;padding:16px}
 .rd .hero-img .ai{position:absolute;top:46px;left:14px;font-size:9.5px;font-weight:700;color:#fff;background:rgba(0,0,0,.3);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);padding:3px 8px;border-radius:999px}
 .rd .hero-img b{color:#fff;font-size:20px;font-weight:800;letter-spacing:-.02em;text-shadow:0 2px 10px rgba(0,0,0,.4)}
 .rd .chips{display:flex;gap:7px;padding:14px 16px 8px;flex-wrap:wrap}
@@ -217,6 +218,8 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important;scroll-behavior:auto}
 }
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.16,.8,.25,1),transform .7s cubic-bezier(.16,.8,.25,1)}
+.reveal.show{opacity:1;transform:none}
 </style>
 </head>
 <body>
@@ -252,7 +255,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
     <div class="phone">
       <div class="screen">
         <div class="island"></div>
-        <div class="sbar"><span>9:41</span><div class="r"><i style="width:9px"></i><i></i><i style="width:18px"></i></div></div>
+        <div class="sbar"><span>9:41</span><div class="r"><svg class="si" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7.5" width="3" height="3.5" rx="1"/><rect x="4.7" y="5" width="3" height="6" rx="1"/><rect x="9.4" y="2.5" width="3" height="8.5" rx="1"/><rect x="14" y="0" width="3" height="11" rx="1"/></svg><svg class="si" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.6c2.5 0 4.8 1 6.5 2.6a.5.5 0 0 1 0 .7l-.8.8a.5.5 0 0 1-.7 0A7 7 0 0 0 8 4.8 7 7 0 0 0 3 6.7a.5.5 0 0 1-.7 0l-.8-.8a.5.5 0 0 1 0-.7A9.3 9.3 0 0 1 8 2.6z"/><path d="M8 6.5c1.4 0 2.7.5 3.6 1.4a.5.5 0 0 1 0 .7l-.9.9a.5.5 0 0 1-.6 0A3 3 0 0 0 8 8.7a3 3 0 0 0-2.1.8.5.5 0 0 1-.6 0l-.9-.9a.5.5 0 0 1 0-.7A5.2 5.2 0 0 1 8 6.5z"/><circle cx="8" cy="10.4" r="1.2"/></svg><svg class="si" viewBox="0 0 27 12" fill="none"><rect x="1" y="1.6" width="21" height="8.8" rx="2.6" stroke="currentColor" stroke-opacity=".4"/><rect x="2.6" y="3.1" width="16" height="5.8" rx="1.3" fill="currentColor"/><path d="M24 4.4c1 .3 1 2.9 0 3.2z" fill="currentColor" fill-opacity=".4"/></svg></div></div>
         <div class="vs">
           <div class="crumb">Step 5 of 6</div>
           <div class="dish">Tomato &amp; mozzarella flatbread</div>
@@ -366,7 +369,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
         <div class="phone">
           <div class="screen">
             <div class="island"></div>
-            <div class="sbar"><span>9:41</span><div class="r"><i style="width:9px"></i><i></i><i style="width:18px"></i></div></div>
+            <div class="sbar"><span>9:41</span><div class="r"><svg class="si" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7.5" width="3" height="3.5" rx="1"/><rect x="4.7" y="5" width="3" height="6" rx="1"/><rect x="9.4" y="2.5" width="3" height="8.5" rx="1"/><rect x="14" y="0" width="3" height="11" rx="1"/></svg><svg class="si" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.6c2.5 0 4.8 1 6.5 2.6a.5.5 0 0 1 0 .7l-.8.8a.5.5 0 0 1-.7 0A7 7 0 0 0 8 4.8 7 7 0 0 0 3 6.7a.5.5 0 0 1-.7 0l-.8-.8a.5.5 0 0 1 0-.7A9.3 9.3 0 0 1 8 2.6z"/><path d="M8 6.5c1.4 0 2.7.5 3.6 1.4a.5.5 0 0 1 0 .7l-.9.9a.5.5 0 0 1-.6 0A3 3 0 0 0 8 8.7a3 3 0 0 0-2.1.8.5.5 0 0 1-.6 0l-.9-.9a.5.5 0 0 1 0-.7A5.2 5.2 0 0 1 8 6.5z"/><circle cx="8" cy="10.4" r="1.2"/></svg><svg class="si" viewBox="0 0 27 12" fill="none"><rect x="1" y="1.6" width="21" height="8.8" rx="2.6" stroke="currentColor" stroke-opacity=".4"/><rect x="2.6" y="3.1" width="16" height="5.8" rx="1.3" fill="currentColor"/><path d="M24 4.4c1 .3 1 2.9 0 3.2z" fill="currentColor" fill-opacity=".4"/></svg></div></div>
             <div class="hs">
               <div class="hi">Evening, <span>Sam</span> 🌿</div>
               <div class="ask"><span class="spk">✨</span> What do you feel like cooking? <span class="mc"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3z"/><path d="M18 11a1 1 0 0 0-2 0 4 4 0 0 1-8 0 1 1 0 0 0-2 0 6 6 0 0 0 12 0z"/></svg></span></div>
@@ -409,7 +412,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
         <div class="phone mid">
           <div class="screen">
             <div class="island"></div>
-            <div class="sbar"><span>9:41</span><div class="r"><i style="width:9px"></i><i></i><i style="width:18px"></i></div></div>
+            <div class="sbar"><span>9:41</span><div class="r"><svg class="si" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7.5" width="3" height="3.5" rx="1"/><rect x="4.7" y="5" width="3" height="6" rx="1"/><rect x="9.4" y="2.5" width="3" height="8.5" rx="1"/><rect x="14" y="0" width="3" height="11" rx="1"/></svg><svg class="si" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.6c2.5 0 4.8 1 6.5 2.6a.5.5 0 0 1 0 .7l-.8.8a.5.5 0 0 1-.7 0A7 7 0 0 0 8 4.8 7 7 0 0 0 3 6.7a.5.5 0 0 1-.7 0l-.8-.8a.5.5 0 0 1 0-.7A9.3 9.3 0 0 1 8 2.6z"/><path d="M8 6.5c1.4 0 2.7.5 3.6 1.4a.5.5 0 0 1 0 .7l-.9.9a.5.5 0 0 1-.6 0A3 3 0 0 0 8 8.7a3 3 0 0 0-2.1.8.5.5 0 0 1-.6 0l-.9-.9a.5.5 0 0 1 0-.7A5.2 5.2 0 0 1 8 6.5z"/><circle cx="8" cy="10.4" r="1.2"/></svg><svg class="si" viewBox="0 0 27 12" fill="none"><rect x="1" y="1.6" width="21" height="8.8" rx="2.6" stroke="currentColor" stroke-opacity=".4"/><rect x="2.6" y="3.1" width="16" height="5.8" rx="1.3" fill="currentColor"/><path d="M24 4.4c1 .3 1 2.9 0 3.2z" fill="currentColor" fill-opacity=".4"/></svg></div></div>
             <div class="rd">
               <div class="hero-img"><span class="ai">✨ AI-generated</span><b>Tomato &amp; mozzarella flatbread</b></div>
               <div class="chips">
@@ -445,7 +448,7 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
         <div class="phone">
           <div class="screen">
             <div class="island"></div>
-            <div class="sbar"><span>9:41</span><div class="r"><i style="width:9px"></i><i></i><i style="width:18px"></i></div></div>
+            <div class="sbar"><span>9:41</span><div class="r"><svg class="si" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7.5" width="3" height="3.5" rx="1"/><rect x="4.7" y="5" width="3" height="6" rx="1"/><rect x="9.4" y="2.5" width="3" height="8.5" rx="1"/><rect x="14" y="0" width="3" height="11" rx="1"/></svg><svg class="si" viewBox="0 0 16 12" fill="currentColor"><path d="M8 2.6c2.5 0 4.8 1 6.5 2.6a.5.5 0 0 1 0 .7l-.8.8a.5.5 0 0 1-.7 0A7 7 0 0 0 8 4.8 7 7 0 0 0 3 6.7a.5.5 0 0 1-.7 0l-.8-.8a.5.5 0 0 1 0-.7A9.3 9.3 0 0 1 8 2.6z"/><path d="M8 6.5c1.4 0 2.7.5 3.6 1.4a.5.5 0 0 1 0 .7l-.9.9a.5.5 0 0 1-.6 0A3 3 0 0 0 8 8.7a3 3 0 0 0-2.1.8.5.5 0 0 1-.6 0l-.9-.9a.5.5 0 0 1 0-.7A5.2 5.2 0 0 1 8 6.5z"/><circle cx="8" cy="10.4" r="1.2"/></svg><svg class="si" viewBox="0 0 27 12" fill="none"><rect x="1" y="1.6" width="21" height="8.8" rx="2.6" stroke="currentColor" stroke-opacity=".4"/><rect x="2.6" y="3.1" width="16" height="5.8" rx="1.3" fill="currentColor"/><path d="M24 4.4c1 .3 1 2.9 0 3.2z" fill="currentColor" fill-opacity=".4"/></svg></div></div>
             <div class="vs">
               <div class="crumb">Step 2 of 6</div>
               <div class="dish">Tomato &amp; mozzarella flatbread</div>
@@ -512,5 +515,22 @@ footer{margin-top:70px;border-top:1px solid var(--line);padding:46px 0 34px}
   </div>
 </footer>
 <script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+<script>
+(function(){
+  if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var sel='.shead,.fcard,.mini,.step-c,.band-inner,.final,.show > div';
+  var els=[].slice.call(document.querySelectorAll(sel));
+  ['.grid4','.steps','.duo','.show'].forEach(function(g){
+    [].slice.call(document.querySelectorAll(g)).forEach(function(grp){
+      [].slice.call(grp.children).forEach(function(ch,i){ch.style.transitionDelay=(i*70)+'ms';});
+    });
+  });
+  els.forEach(function(el){el.classList.add('reveal');});
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target);}});
+  },{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
+</script>
 </body>
 </html>
