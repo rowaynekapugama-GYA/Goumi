@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>goumi — Terms of Service</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#306840;--forest-deep:#1F4A2E;--leaf:#5BA873;--berry:#D9543B;--ink:#19271E;--slate:#5A655F;--line:rgba(31,74,46,.1);--bg:#EFF4ED;--glass:rgba(255,255,255,.55);--glass-strong:rgba(255,255,255,.72);--glass-brd:rgba(255,255,255,.7);--shadow:0 10px 34px -12px rgba(31,74,46,.28);--sans:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.field{position:fixed;inset:0;z-index:-2;background:radial-gradient(55% 45% at 10% 6%,rgba(91,168,115,.26),transparent 70%),radial-gradient(45% 40% at 94% 4%,rgba(232,130,107,.2),transparent 70%),radial-gradient(55% 50% at 88% 96%,rgba(205,232,212,.45),transparent 72%),linear-gradient(180deg,#F3F7F1,#E9F0E8)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border:1px solid var(--glass-brd);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.6)}
+.nav-outer{position:sticky;top:14px;z-index:50;padding:0 22px}
+.nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:11px 14px 11px 18px;border-radius:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand .mark{width:32px;height:32px;flex:none}
+.brand b{font-weight:800;font-size:19px;letter-spacing:-.03em}
+.brandlogo{height:30px;width:auto;display:block}
+.nav .links{margin-left:auto;display:flex;align-items:center;gap:26px}
+.nav .links a{color:var(--slate);text-decoration:none;font-weight:600;font-size:14.5px;transition:color .2s}
+.nav .links a:hover{color:var(--forest)}
+.btn-primary{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;border-radius:13px;padding:10px 16px;font-weight:700;font-size:14.5px;text-decoration:none;box-shadow:0 8px 20px -8px rgba(31,74,46,.6),inset 0 1px 0 rgba(255,255,255,.25)}
+@media(max-width:680px){.nav .links a:not(.btn-primary){display:none}}
+
+/* legal layout */
+.legal{max-width:780px;margin:40px auto 0;padding:0 22px}
+.crumbs{font-size:13px;color:var(--slate);margin-bottom:18px}
+.crumbs a{color:var(--forest);text-decoration:none;font-weight:600}
+.doc{border-radius:24px;padding:clamp(26px,5vw,52px)}
+.doc h1{font-size:clamp(28px,5vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:800;color:var(--forest-deep);margin-bottom:6px}
+.doc h2{font-size:20px;font-weight:800;letter-spacing:-.01em;color:var(--forest-deep);margin:30px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+.doc h2:first-of-type{border-top:none;padding-top:0}
+.doc h3{font-size:16px;font-weight:700;color:var(--ink);margin:18px 0 6px}
+.doc p{margin:10px 0;color:#2c3a30;font-size:15.5px}
+.doc ul,.doc ol{margin:10px 0 10px 4px;padding-left:22px;color:#2c3a30;font-size:15.5px}
+.doc li{margin:6px 0}
+.doc strong{font-weight:700;color:var(--ink)}
+.doc a{color:var(--forest);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.doc code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:rgba(232,130,107,.13);color:#a23a26;padding:1px 6px;border-radius:5px}
+.doc hr{border:none;border-top:1px solid var(--line);margin:26px 0}
+.doc table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.doc th{background:var(--forest);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
+.doc td{padding:9px 11px;border-top:1px solid var(--line);vertical-align:top;color:#2c3a30}
+.doc tbody tr:nth-child(even){background:rgba(255,255,255,.4)}
+/* the draft notice (first blockquote) */
+.doc blockquote{background:rgba(232,130,107,.1);border:1px solid rgba(232,130,107,.32);border-left:4px solid var(--berry);border-radius:12px;padding:14px 18px;margin:18px 0;color:#7a3322;font-size:13.5px}
+.doc blockquote p{color:#7a3322;margin:6px 0;font-size:13.5px}
+.doc blockquote strong{color:#5e2418}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}
+.fbrand .brand{margin-bottom:12px}
+.fbrand p{color:var(--slate);font-size:14px;max-width:34ch;line-height:1.6}
+.fcol h6{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--slate);text-decoration:none;font-size:14px;margin-bottom:10px}
+.fcol a:hover{color:var(--forest)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--slate);border-top:1px solid var(--line);padding-top:20px}
+@media(max-width:880px){.fgrid{grid-template-columns:1fr;gap:24px}}
+</style></head>
+<body>
+<div class="field"></div>
+
+<div class="nav-outer"><nav class="nav glass">
+<a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+<div class="links"><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#get" class="btn-primary">Get goumi</a></div>
+</nav></div>
+<main class="legal">
+<div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Terms of Service</div>
+<article class="doc glass">
+<h1>goumi — Terms of Service</h1>
+<blockquote>
+<p><strong>DRAFT FOR LEGAL REVIEW — NOT YET IN EFFECT.</strong>
+This is a working draft prepared to brief a privacy lawyer. It is not legal advice and must be reviewed and finalised by a qualified Australian lawyer before publication or launch. The health/nutrition/allergen disclaimers and the Australian Consumer Law provisions in particular need legal confirmation. Replace every <code>[bracketed placeholder]</code> with your details.</p>
+</blockquote>
+<p><strong>Last updated:</strong> <code>[DATE]</code>
+<strong>Effective:</strong> <code>[DATE]</code></p>
+<p>These Terms of Service ("<strong>Terms</strong>") are a legal agreement between you and <code>[goumi Pty Ltd]</code> (ABN <code>[XX XXX XXX XXX]</code>) ("<strong>goumi</strong>", "<strong>we</strong>", "<strong>us</strong>", "<strong>our</strong>") governing your use of the goumi app, website, and related services (the "<strong>Service</strong>"). By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you do not agree, do not use the Service.</p>
+<h2>1. Eligibility — you must be 18 or over</h2>
+<p>The Service is for adults only. <strong>You must be at least 18 years old to use goumi.</strong> By using the Service you confirm that you are 18 or over. We do not knowingly permit anyone under 18 to use the Service, and we may verify your age and suspend or terminate accounts that do not meet this requirement.</p>
+<h2>2. The Service</h2>
+<p>goumi is a hands-free, voice-guided cooking app. It generates and personalises recipes, provides estimated nutritional information, runs a voice cooking experience, and helps you plan meals and manage your kitchen. We may change, add, or remove features at any time.</p>
+<h2>3. Licence</h2>
+<p>We grant you a limited, personal, non-exclusive, non-transferable, revocable licence to use the Service for your own non-commercial use, subject to these Terms. You must not copy, modify, reverse-engineer, resell, or create derivative works from the Service, or use it unlawfully or in a way that harms the Service or other users.</p>
+<h2>4. Your account</h2>
+<p>You are responsible for keeping your login credentials secure and for activity under your account. Provide accurate information and keep it up to date. Tell us promptly at <code>[support@goumi.app]</code> if you suspect unauthorised use. You may delete your account at any time in the app's settings.</p>
+<h2>5. Subscriptions, billing, and cancellation</h2>
+<p>Some features require a paid subscription. Subscriptions are sold and processed through the <strong>Apple App Store</strong> or <strong>Google Play</strong>, and are subject to those stores' terms as well as these Terms.</p>
+<ul>
+<li><strong>Price and billing.</strong> The price, billing period, and what's included are shown at the point of purchase. Payment is charged to your app-store account at confirmation.</li>
+<li><strong>Auto-renewal.</strong> Subscriptions renew automatically at the end of each period unless you cancel at least 24 hours before the period ends. Your account is charged for renewal within 24 hours before the period ends.</li>
+<li><strong>Free trials.</strong> If a free trial is offered, any unused portion is forfeited when you purchase a subscription. Unless you cancel before the trial ends, it converts to a paid subscription.</li>
+<li><strong>Managing and cancelling.</strong> Manage or cancel your subscription in your Apple or Google account settings. Deleting the app does not cancel your subscription.</li>
+<li><strong>Refunds.</strong> Refunds are handled by Apple or Google under their policies. Nothing in this section limits any rights you have under the Australian Consumer Law or other mandatory consumer law (see section 11).</li>
+<li><strong>Price changes.</strong> We may change subscription prices; we will give notice as required and changes apply to future billing periods.</li>
+</ul>
+<h2>6. AI-generated content</h2>
+<p>goumi uses artificial intelligence to generate recipes, nutritional estimates, and dish images. <strong>AI-generated content can be inaccurate, incomplete, or unexpected.</strong> You are responsible for using your own judgement before relying on it, especially regarding food safety, ingredient suitability, and cooking methods. Dish images are AI-generated illustrations and your actual results will look different.</p>
+<h2>7. Health, nutrition, and allergen disclaimer — please read</h2>
+<p><strong>goumi does not provide medical, health, dietary, or nutritional advice, and is not a substitute for advice from a qualified professional.</strong> Specifically:</p>
+<ul>
+<li><strong>Nutritional information is an estimate.</strong> Calories, protein, fat, and other figures are approximate, derived from the listed ingredients, and vary with portion size, brands, and substitutions. Do not rely on them for medical or clinical purposes. If you have a medical condition (for example, diabetes or a serious allergy), consult a qualified professional.</li>
+<li><strong>Allergens — you must verify ingredients yourself.</strong> We cannot guarantee any recipe is free from a given allergen. Ingredient and allergen information may be incomplete or AI-generated. <strong>If you have an allergy or intolerance, you must check every ingredient and product label yourself before cooking or eating.</strong> You use allergy and dietary filters at your own risk.</li>
+<li><strong>Results vary.</strong> The taste, appearance, nutritional content, and outcome of any recipe will vary depending on the ingredients, brands, equipment, substitutions, and techniques you use.</li>
+<li><strong>Cooking is your responsibility.</strong> You are responsible for safe food handling, correct cooking temperatures, and the safe use of kitchen equipment.</li>
+</ul>
+<p>To the extent permitted by law, you assume the risks associated with using recipes and information from the Service. This section is subject to section 11.</p>
+<h2>8. Intellectual property</h2>
+<p>The Service, including its software, design, branding, and content (excluding your own content), is owned by goumi or its licensors and is protected by intellectual property laws. These Terms do not grant you any rights in our intellectual property except the licence in section 3. The "goumi" name and logo are our trade marks and may not be used without our permission.</p>
+<p><code>[If users can submit content — e.g., notes, custom recipes — add a user-content licence here: you retain ownership but grant goumi a licence to host and display your content to provide the Service.]</code></p>
+<h2>9. Third-party services</h2>
+<p>The Service relies on third parties, including the Apple App Store, Google Play, and our AI and infrastructure providers. Your use of third-party services may be subject to their terms, and we are not responsible for them.</p>
+<h2>10. Disclaimers of warranties</h2>
+<p>To the maximum extent permitted by law, and subject to section 11, the Service is provided "<strong>as is</strong>" and "<strong>as available</strong>" without warranties of any kind, whether express or implied, including as to merchantability, fitness for a particular purpose, accuracy, or non-infringement. We do not warrant that the Service will be uninterrupted, error-free, or that AI-generated content will be accurate or suitable.</p>
+<h2>11. Australian Consumer Law and your statutory rights</h2>
+<p><strong>Nothing in these Terms excludes, restricts, or modifies any consumer guarantee, right, or remedy that applies to you under the Australian Consumer Law (ACL) or any other law that cannot lawfully be excluded.</strong> Our goods and services come with guarantees that cannot be excluded under the ACL. For major failures you may be entitled to a remedy as set out in the ACL. Where our liability cannot be excluded but can be limited, our liability is limited (at our option) to re-supplying the service or paying the cost of having it re-supplied. If you are a consumer under similar mandatory laws in another country, those rights also apply.</p>
+<h2>12. Limitation of liability</h2>
+<p>Subject to section 11, to the maximum extent permitted by law, goumi will not be liable for any indirect, incidental, special, consequential, or punitive damages, or for any loss arising from your reliance on AI-generated content, nutritional estimates, or allergen information. Subject to section 11, our total aggregate liability arising out of or relating to the Service is limited to the greater of the amount you paid us in the 12 months before the claim or <code>[AUD 100]</code>.</p>
+<h2>13. Indemnity</h2>
+<p>To the extent permitted by law, you agree to indemnify goumi against claims, losses, and costs arising from your misuse of the Service or your breach of these Terms.</p>
+<h2>14. Suspension and termination</h2>
+<p>You may stop using the Service and delete your account at any time. We may suspend or terminate your access if you breach these Terms, if required by law, or if necessary to protect the Service or other users. Sections that by their nature should survive termination (including sections 7, 8, 10–13, and 16) will survive.</p>
+<h2>15. Changes to these Terms</h2>
+<p>We may update these Terms from time to time. We will post the updated version with a new "Last updated" date and, where the change is material, notify you. Continuing to use the Service after changes take effect means you accept the updated Terms.</p>
+<h2>16. Governing law and disputes</h2>
+<p>These Terms are governed by the laws of <code>[New South Wales / your state]</code>, Australia, and you and we submit to the non-exclusive jurisdiction of the courts of that place. Nothing in this section limits any mandatory consumer-law rights you have in your country of residence. Before starting a formal dispute, please contact us so we can try to resolve it.</p>
+<h2>17. Apple App Store — additional terms (Apple devices)</h2>
+<p>If you download goumi from the Apple App Store, the following also apply and, to the extent of any conflict with the rest of these Terms for Apple-device use, prevail:</p>
+<ul>
+<li>These Terms are between you and goumi only, <strong>not with Apple</strong>. Apple is not responsible for the Service or its content.</li>
+<li>Your licence to use goumi on Apple devices is limited to use on Apple-branded products you own or control, as permitted by the App Store Terms.</li>
+<li><strong>Maintenance and support</strong> for the Service is our responsibility, not Apple's.</li>
+<li>To the extent permitted by law, <strong>Apple has no warranty obligation</strong> for the Service; any warranty claims are our responsibility.</li>
+<li>Apple is not responsible for addressing product liability, legal/regulatory compliance, or third-party intellectual property claims relating to the Service.</li>
+<li>Apple and its subsidiaries are <strong>third-party beneficiaries</strong> of these Terms and may enforce them against you.</li>
+<li>You confirm you are not located in a country subject to a U.S. Government embargo or designated as "terrorist supporting", and you are not on any U.S. Government prohibited-party list.</li>
+</ul>
+<h2>18. Contact us</h2>
+<p><code>[goumi Pty Ltd]</code>
+<code>[support@goumi.app]</code> · <code>[postal address]</code></p>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="fgrid">
+<div class="fbrand"><a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+<p>The hands-free cooking app. Recipes made with AI, guided by your voice. Made in Australia.</p></div>
+<div class="fcol"><h6>Product</h6><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#get">Get the app</a></div>
+<div class="fcol"><h6>Legal</h6><a href="privacy.html">Privacy Policy</a><a href="health-data-policy.html">Consumer Health Data</a><a href="terms.html">Terms of Service</a><a href="cookie-policy.html">Cookie Policy</a></div>
+</div>
+<div class="fbot"><span>&copy; <span id="yr"></span> goumi. All rights reserved.</span><span>hello@goumi.app</span></div>
+</div></footer><script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body></html>

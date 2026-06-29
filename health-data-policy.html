@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>goumi — Consumer Health Data Privacy Policy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#306840;--forest-deep:#1F4A2E;--leaf:#5BA873;--berry:#D9543B;--ink:#19271E;--slate:#5A655F;--line:rgba(31,74,46,.1);--bg:#EFF4ED;--glass:rgba(255,255,255,.55);--glass-strong:rgba(255,255,255,.72);--glass-brd:rgba(255,255,255,.7);--shadow:0 10px 34px -12px rgba(31,74,46,.28);--sans:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.field{position:fixed;inset:0;z-index:-2;background:radial-gradient(55% 45% at 10% 6%,rgba(91,168,115,.26),transparent 70%),radial-gradient(45% 40% at 94% 4%,rgba(232,130,107,.2),transparent 70%),radial-gradient(55% 50% at 88% 96%,rgba(205,232,212,.45),transparent 72%),linear-gradient(180deg,#F3F7F1,#E9F0E8)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border:1px solid var(--glass-brd);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.6)}
+.nav-outer{position:sticky;top:14px;z-index:50;padding:0 22px}
+.nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:11px 14px 11px 18px;border-radius:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand .mark{width:32px;height:32px;flex:none}
+.brand b{font-weight:800;font-size:19px;letter-spacing:-.03em}
+.brandlogo{height:30px;width:auto;display:block}
+.nav .links{margin-left:auto;display:flex;align-items:center;gap:26px}
+.nav .links a{color:var(--slate);text-decoration:none;font-weight:600;font-size:14.5px;transition:color .2s}
+.nav .links a:hover{color:var(--forest)}
+.btn-primary{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;border-radius:13px;padding:10px 16px;font-weight:700;font-size:14.5px;text-decoration:none;box-shadow:0 8px 20px -8px rgba(31,74,46,.6),inset 0 1px 0 rgba(255,255,255,.25)}
+@media(max-width:680px){.nav .links a:not(.btn-primary){display:none}}
+
+/* legal layout */
+.legal{max-width:780px;margin:40px auto 0;padding:0 22px}
+.crumbs{font-size:13px;color:var(--slate);margin-bottom:18px}
+.crumbs a{color:var(--forest);text-decoration:none;font-weight:600}
+.doc{border-radius:24px;padding:clamp(26px,5vw,52px)}
+.doc h1{font-size:clamp(28px,5vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:800;color:var(--forest-deep);margin-bottom:6px}
+.doc h2{font-size:20px;font-weight:800;letter-spacing:-.01em;color:var(--forest-deep);margin:30px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+.doc h2:first-of-type{border-top:none;padding-top:0}
+.doc h3{font-size:16px;font-weight:700;color:var(--ink);margin:18px 0 6px}
+.doc p{margin:10px 0;color:#2c3a30;font-size:15.5px}
+.doc ul,.doc ol{margin:10px 0 10px 4px;padding-left:22px;color:#2c3a30;font-size:15.5px}
+.doc li{margin:6px 0}
+.doc strong{font-weight:700;color:var(--ink)}
+.doc a{color:var(--forest);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.doc code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:rgba(232,130,107,.13);color:#a23a26;padding:1px 6px;border-radius:5px}
+.doc hr{border:none;border-top:1px solid var(--line);margin:26px 0}
+.doc table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.doc th{background:var(--forest);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
+.doc td{padding:9px 11px;border-top:1px solid var(--line);vertical-align:top;color:#2c3a30}
+.doc tbody tr:nth-child(even){background:rgba(255,255,255,.4)}
+/* the draft notice (first blockquote) */
+.doc blockquote{background:rgba(232,130,107,.1);border:1px solid rgba(232,130,107,.32);border-left:4px solid var(--berry);border-radius:12px;padding:14px 18px;margin:18px 0;color:#7a3322;font-size:13.5px}
+.doc blockquote p{color:#7a3322;margin:6px 0;font-size:13.5px}
+.doc blockquote strong{color:#5e2418}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}
+.fbrand .brand{margin-bottom:12px}
+.fbrand p{color:var(--slate);font-size:14px;max-width:34ch;line-height:1.6}
+.fcol h6{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--slate);text-decoration:none;font-size:14px;margin-bottom:10px}
+.fcol a:hover{color:var(--forest)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--slate);border-top:1px solid var(--line);padding-top:20px}
+@media(max-width:880px){.fgrid{grid-template-columns:1fr;gap:24px}}
+</style></head>
+<body>
+<div class="field"></div>
+
+<div class="nav-outer"><nav class="nav glass">
+<a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+<div class="links"><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#get" class="btn-primary">Get goumi</a></div>
+</nav></div>
+<main class="legal">
+<div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Consumer Health Data Privacy Policy</div>
+<article class="doc glass">
+<h1>goumi — Consumer Health Data Privacy Policy</h1>
+<blockquote>
+<p><strong>DRAFT FOR LEGAL REVIEW — NOT YET IN EFFECT.</strong>
+This is a working draft prepared to brief a privacy lawyer. It is not legal advice and must be reviewed and finalised by a qualified lawyer before publication or launch. This document is <strong>separate from, and in addition to, our general Privacy Policy</strong>, as required for consumer health data. Replace every <code>[bracketed placeholder]</code> with your details.</p>
+</blockquote>
+<p><strong>Last updated:</strong> <code>[DATE]</code>
+<strong>Effective:</strong> <code>[DATE]</code></p>
+<h2>About this policy</h2>
+<p>This Consumer Health Data Privacy Policy applies specifically to "<strong>consumer health data</strong>" as defined under the <strong>Washington My Health My Data Act (MHMDA)</strong> and the equivalent <strong>Nevada</strong> law (SB 370). It is provided as a <strong>standalone policy</strong>, separate from our general <a href="privacy.html">Privacy Policy</a>, and is linked from our homepage. If you are a consumer in Washington or Nevada, this policy describes how we collect, use, share, and protect your consumer health data, and the rights you have.</p>
+<p>This policy is operated by <code>[goumi Pty Ltd]</code> ("<strong>goumi</strong>", "<strong>we</strong>", "<strong>us</strong>"). Questions: <code>[privacy@goumi.app]</code>.</p>
+<h2>1. What we mean by consumer health data</h2>
+<p>Consumer health data is personal information linked to you that identifies your past, present, or future physical or mental health status. For goumi, this means the information you choose to share so we can tailor recipes to you, including:</p>
+<ul>
+<li><strong>allergies and food intolerances</strong> (for example, nut, gluten, or dairy allergies);</li>
+<li><strong>dietary restrictions and preferences</strong> tied to health (for example, low-sodium, diabetic-friendly, low-carb);</li>
+<li><strong>health and nutrition goals</strong> (for example, weight management, muscle gain, managing a condition through diet); and</li>
+<li><strong>inferences</strong> we draw from the above to personalise recipes and nutritional estimates.</li>
+</ul>
+<p>We do <strong>not</strong> collect biometric data, precise location for health purposes, or data about reproductive or sexual health.</p>
+<h2>2. How we collect it and our sources</h2>
+<p>We collect consumer health data <strong>directly from you</strong> when you choose to enter it into the app (for example, when setting up dietary preferences or allergy filters). We do not buy consumer health data, and we do not collect it from data brokers.</p>
+<h2>3. How we use it</h2>
+<p>We use your consumer health data only to:</p>
+<ul>
+<li>personalise the recipes, meal plans, and nutritional estimates we show you;</li>
+<li>apply your allergy and dietary filters; and</li>
+<li>provide the features you have asked for.</li>
+</ul>
+<p>We do <strong>not</strong> use consumer health data for advertising, and we do <strong>not</strong> profile you for marketing.</p>
+<h2>4. How we share it</h2>
+<p>We do <strong>not sell</strong> your consumer health data. We will not sell it without the separate, valid <strong>authorisation</strong> the law requires, and we have no plans to sell it.</p>
+<p>We keep your consumer health data within our Australian cloud environment (AWS Sydney) and limit access to it. We share it with a service provider (processor) only where necessary to provide the Service to you and under a contract that restricts their use of it. We do not share consumer health data with overseas AI or voice providers unless it is necessary to deliver a feature you have requested, and we minimise what is shared. We may also disclose it where required by law.</p>
+<p>The categories of recipients with whom we may share data to operate goumi are listed in our general <a href="privacy.html">Privacy Policy</a>. You can request a specific list of the third parties and affiliates with whom we have shared your consumer health data (see section 7).</p>
+<h2>5. How we obtain your consent</h2>
+<p>Before we collect or use your consumer health data for any purpose beyond what is strictly necessary to provide a feature you have requested, we ask for your <strong>clear, affirmative, opt-in consent</strong>, presented separately from our other terms. You are free to decline, and you can withdraw your consent at any time (see section 7), after which we will stop collecting and using that data and will delete it.</p>
+<h2>6. Data security and retention</h2>
+<p>We protect consumer health data with encryption in transit and at rest, access controls, and restricted internal access. We retain it only for as long as needed to provide the Service or as required by law, and we delete it when you withdraw consent or delete your account.</p>
+<h2>7. Your rights</h2>
+<p>If you are a Washington or Nevada consumer, you have the right to:</p>
+<ul>
+<li><strong>Confirm and access</strong> — confirm whether we are collecting, sharing, or selling your consumer health data, and access that data;</li>
+<li><strong>List of recipients</strong> — obtain a list of the third parties and affiliates with whom we have shared or to whom we have sold your consumer health data;</li>
+<li><strong>Delete</strong> — request deletion of your consumer health data; and</li>
+<li><strong>Withdraw consent</strong> — withdraw your consent to our collection and sharing of your consumer health data.</li>
+</ul>
+<p>To exercise any of these rights, contact <code>[privacy@goumi.app]</code> or use the controls in the app's privacy settings. We will respond within <strong>45 days</strong> (extendable by a further 45 days where reasonably necessary, with notice to you). We will not discriminate against you for exercising your rights. We may need to verify your identity before acting on a request.</p>
+<h2>8. Appeals and complaints</h2>
+<p>If we decline your request, you may appeal by replying to our response or contacting <code>[privacy@goumi.app]</code>. If your appeal is denied, you may contact the <strong>Washington State Attorney General</strong> at atg.wa.gov/file-complaint (Washington consumers) or the <strong>Nevada Attorney General</strong> (Nevada consumers).</p>
+<h2>9. Changes to this policy</h2>
+<p>We may update this policy from time to time and will post the updated version with a new "Last updated" date.</p>
+<h2>10. Contact us</h2>
+<p><code>[goumi Pty Ltd]</code>
+Consumer health data contact: <code>[privacy@goumi.app]</code>
+Postal: <code>[postal address]</code></p>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="fgrid">
+<div class="fbrand"><a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+<p>The hands-free cooking app. Recipes made with AI, guided by your voice. Made in Australia.</p></div>
+<div class="fcol"><h6>Product</h6><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#get">Get the app</a></div>
+<div class="fcol"><h6>Legal</h6><a href="privacy.html">Privacy Policy</a><a href="health-data-policy.html">Consumer Health Data</a><a href="terms.html">Terms of Service</a><a href="cookie-policy.html">Cookie Policy</a></div>
+</div>
+<div class="fbot"><span>&copy; <span id="yr"></span> goumi. All rights reserved.</span><span>hello@goumi.app</span></div>
+</div></footer><script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body></html>

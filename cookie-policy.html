@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>goumi — Cookie Policy</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--forest:#306840;--forest-deep:#1F4A2E;--leaf:#5BA873;--berry:#D9543B;--ink:#19271E;--slate:#5A655F;--line:rgba(31,74,46,.1);--bg:#EFF4ED;--glass:rgba(255,255,255,.55);--glass-strong:rgba(255,255,255,.72);--glass-brd:rgba(255,255,255,.7);--shadow:0 10px 34px -12px rgba(31,74,46,.28);--sans:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.field{position:fixed;inset:0;z-index:-2;background:radial-gradient(55% 45% at 10% 6%,rgba(91,168,115,.26),transparent 70%),radial-gradient(45% 40% at 94% 4%,rgba(232,130,107,.2),transparent 70%),radial-gradient(55% 50% at 88% 96%,rgba(205,232,212,.45),transparent 72%),linear-gradient(180deg,#F3F7F1,#E9F0E8)}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.glass{background:var(--glass);-webkit-backdrop-filter:blur(20px) saturate(1.5);backdrop-filter:blur(20px) saturate(1.5);border:1px solid var(--glass-brd);box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.6)}
+.nav-outer{position:sticky;top:14px;z-index:50;padding:0 22px}
+.nav{max-width:1140px;margin:0 auto;display:flex;align-items:center;gap:18px;padding:11px 14px 11px 18px;border-radius:18px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+.brand .mark{width:32px;height:32px;flex:none}
+.brand b{font-weight:800;font-size:19px;letter-spacing:-.03em}
+.brandlogo{height:30px;width:auto;display:block}
+.nav .links{margin-left:auto;display:flex;align-items:center;gap:26px}
+.nav .links a{color:var(--slate);text-decoration:none;font-weight:600;font-size:14.5px;transition:color .2s}
+.nav .links a:hover{color:var(--forest)}
+.btn-primary{background:linear-gradient(180deg,#3a7d4f,#2a5d39);color:#fff;border-radius:13px;padding:10px 16px;font-weight:700;font-size:14.5px;text-decoration:none;box-shadow:0 8px 20px -8px rgba(31,74,46,.6),inset 0 1px 0 rgba(255,255,255,.25)}
+@media(max-width:680px){.nav .links a:not(.btn-primary){display:none}}
+
+/* legal layout */
+.legal{max-width:780px;margin:40px auto 0;padding:0 22px}
+.crumbs{font-size:13px;color:var(--slate);margin-bottom:18px}
+.crumbs a{color:var(--forest);text-decoration:none;font-weight:600}
+.doc{border-radius:24px;padding:clamp(26px,5vw,52px)}
+.doc h1{font-size:clamp(28px,5vw,40px);line-height:1.1;letter-spacing:-.03em;font-weight:800;color:var(--forest-deep);margin-bottom:6px}
+.doc h2{font-size:20px;font-weight:800;letter-spacing:-.01em;color:var(--forest-deep);margin:30px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+.doc h2:first-of-type{border-top:none;padding-top:0}
+.doc h3{font-size:16px;font-weight:700;color:var(--ink);margin:18px 0 6px}
+.doc p{margin:10px 0;color:#2c3a30;font-size:15.5px}
+.doc ul,.doc ol{margin:10px 0 10px 4px;padding-left:22px;color:#2c3a30;font-size:15.5px}
+.doc li{margin:6px 0}
+.doc strong{font-weight:700;color:var(--ink)}
+.doc a{color:var(--forest);font-weight:600;text-decoration:underline;text-underline-offset:2px}
+.doc code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:rgba(232,130,107,.13);color:#a23a26;padding:1px 6px;border-radius:5px}
+.doc hr{border:none;border-top:1px solid var(--line);margin:26px 0}
+.doc table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13.5px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
+.doc th{background:var(--forest);color:#fff;text-align:left;padding:9px 11px;font-weight:600}
+.doc td{padding:9px 11px;border-top:1px solid var(--line);vertical-align:top;color:#2c3a30}
+.doc tbody tr:nth-child(even){background:rgba(255,255,255,.4)}
+/* the draft notice (first blockquote) */
+.doc blockquote{background:rgba(232,130,107,.1);border:1px solid rgba(232,130,107,.32);border-left:4px solid var(--berry);border-radius:12px;padding:14px 18px;margin:18px 0;color:#7a3322;font-size:13.5px}
+.doc blockquote p{color:#7a3322;margin:6px 0;font-size:13.5px}
+.doc blockquote strong{color:#5e2418}
+
+footer{margin-top:64px;border-top:1px solid var(--line);padding:40px 0 30px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;margin-bottom:30px}
+.fbrand .brand{margin-bottom:12px}
+.fbrand p{color:var(--slate);font-size:14px;max-width:34ch;line-height:1.6}
+.fcol h6{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:14px}
+.fcol a{display:block;color:var(--slate);text-decoration:none;font-size:14px;margin-bottom:10px}
+.fcol a:hover{color:var(--forest)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;font-size:13px;color:var(--slate);border-top:1px solid var(--line);padding-top:20px}
+@media(max-width:880px){.fgrid{grid-template-columns:1fr;gap:24px}}
+</style></head>
+<body>
+<div class="field"></div>
+
+<div class="nav-outer"><nav class="nav glass">
+<a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+<div class="links"><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#get" class="btn-primary">Get goumi</a></div>
+</nav></div>
+<main class="legal">
+<div class="crumbs"><a href="index.html">Home</a> &nbsp;/&nbsp; Cookie Policy</div>
+<article class="doc glass">
+<h1>goumi — Cookie Policy</h1>
+<blockquote>
+<p><strong>DRAFT FOR LEGAL REVIEW — NOT YET IN EFFECT.</strong>
+Working draft to brief a privacy lawyer; not legal advice. Confirm your actual cookies/SDKs and <code>[ANALYTICS_PROVIDER]</code> before publishing. Replace every <code>[bracketed placeholder]</code>.</p>
+</blockquote>
+<p><strong>Last updated:</strong> <code>[DATE]</code></p>
+<h2>1. About this policy</h2>
+<p>This Cookie Policy explains how <code>[goumi Pty Ltd]</code> ("<strong>goumi</strong>", "<strong>we</strong>", "<strong>us</strong>") uses cookies and similar technologies on our website at <code>[goumi.app]</code> and, where relevant, in the goumi app. It should be read with our <a href="privacy.html">Privacy Policy</a>.</p>
+<h2>2. What are cookies and similar technologies</h2>
+<p>Cookies are small text files stored on your device when you visit a website. Similar technologies include pixels, local storage, and mobile SDKs that perform comparable functions. They help a service work, remember your choices, and understand how it is used.</p>
+<h2>3. The categories we use</h2>
+<ul>
+<li><strong>Strictly necessary</strong> — required for the website/app to function (for example, security, load balancing, and remembering your consent choices). These cannot be switched off.</li>
+<li><strong>Functional</strong> — remember your preferences and settings to improve your experience.</li>
+<li><strong>Analytics / performance</strong> — help us understand how the Service is used so we can improve it (for example, <code>[ANALYTICS_PROVIDER]</code>). We configure analytics to minimise personal data where possible.</li>
+<li><strong>Marketing</strong> — <code>[Only include if you use marketing/advertising cookies. If you do not, state: "We do not use marketing or advertising cookies."]</code></li>
+</ul>
+<h2>4. Cookies and technologies we use</h2>
+<table>
+<thead>
+<tr>
+<th>Name / provider</th>
+<th>Category</th>
+<th>Purpose</th>
+<th>Duration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[cookie/SDK name]</code></td>
+<td>Strictly necessary</td>
+<td><code>[e.g. session, security, consent storage]</code></td>
+<td><code>[duration]</code></td>
+</tr>
+<tr>
+<td><code>[ANALYTICS_PROVIDER]</code></td>
+<td>Analytics</td>
+<td><code>[e.g. usage measurement]</code></td>
+<td><code>[duration]</code></td>
+</tr>
+<tr>
+<td><code>[add rows as needed]</code></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><code>[Complete this table to match what you actually deploy — Apple App Privacy and Google Data Safety disclosures must match it.]</code></p>
+<h2>5. Your choices and consent</h2>
+<p>Where required by law (for example, in the EU/UK), we ask for your <strong>opt-in consent</strong> before setting non-essential cookies, through a consent banner when you first visit. You can change your choices at any time via <code>[the "Cookie settings" link in the website footer]</code> and your browser or device settings. We also honour the <strong>Global Privacy Control</strong> signal where applicable.</p>
+<p>You can control cookies through your browser settings (to block or delete cookies) and manage app tracking through your device's privacy settings. Blocking some cookies may affect how the Service works.</p>
+<h2>6. Third-party cookies</h2>
+<p>Some cookies are set by third parties (for example, our analytics provider). Their use of information is governed by their own privacy policies. We list our providers in our <a href="privacy.html">Privacy Policy</a>.</p>
+<h2>7. Changes</h2>
+<p>We may update this policy and will post the updated version with a new "Last updated" date.</p>
+<h2>8. Contact</h2>
+<p><code>[goumi Pty Ltd]</code> · <code>[privacy@goumi.app]</code></p>
+<hr />
+<h2>Appendix — Cookie consent banner copy (for the website)</h2>
+<p><strong>Banner heading:</strong> Cookies on goumi</p>
+<p><strong>Banner body:</strong> We use strictly necessary cookies to make goumi work. With your permission, we'd also like to use analytics cookies to understand how the site is used and improve it. You can change your choice any time.</p>
+<p><strong>Buttons:</strong> <code>Accept all</code> · <code>Reject non-essential</code> · <code>Manage settings</code></p>
+<p><strong>Manage settings panel:</strong>
+- <em>Strictly necessary</em> — Always on. Required for the site to function.
+- <em>Analytics</em> — Off by default. Helps us improve goumi. <code>[toggle]</code>
+- <em>Functional</em> — Off by default. Remembers your preferences. <code>[toggle]</code></p>
+<p><code>Save preferences</code></p>
+</article>
+</main>
+<footer><div class="wrap">
+<div class="fgrid">
+<div class="fbrand"><a class="brand" href="index.html"><img src="goumi-logo.png" class="brandlogo" alt="goumi"></a>
+<p>The hands-free cooking app. Recipes made with AI, guided by your voice. Made in Australia.</p></div>
+<div class="fcol"><h6>Product</h6><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#get">Get the app</a></div>
+<div class="fcol"><h6>Legal</h6><a href="privacy.html">Privacy Policy</a><a href="health-data-policy.html">Consumer Health Data</a><a href="terms.html">Terms of Service</a><a href="cookie-policy.html">Cookie Policy</a></div>
+</div>
+<div class="fbot"><span>&copy; <span id="yr"></span> goumi. All rights reserved.</span><span>hello@goumi.app</span></div>
+</div></footer><script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body></html>
